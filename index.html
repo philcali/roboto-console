@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sweepstake Ninja!</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo">Sweepstake Ninja</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div id="roboto-loading" class="container">
+        <div class="row">
+          <div class="col s12">
+            <center>
+              <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div><div class="gap-patch">
+                    <div class="circle"></div>
+                  </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div id="roboto-login" style="display: none;" class="container roboto-hidden">
+        <div class="row">
+          <div class="col s12"><center><h4>Sign in to Sweepstake Ninja</h4></center></div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <center><a data-signin="GOOGLE" class="waves-effect waves-light btn red"><i class="material-icons left">android</i>Login</a></center>
+          </div>
+        </div>
+        <div class="roboto-loading-bar row roboto-hidden">
+          <div class="col s12">
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          &copy; <span class="year">{year}</span> of Calico.
+          <a class="grey-text text-lighten-4 right" href="https://github.com/philcali/">Philcali</a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
