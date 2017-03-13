@@ -10,6 +10,14 @@
   display: none;
 }
 
+label.radio-label {
+  top: 0px;
+}
+
+ul.tabs {
+  margin-top: 5px;
+}
+
 body {
   display: flex;
   min-height: 100vh;

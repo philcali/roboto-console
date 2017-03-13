@@ -10,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <ul id="account-dropdown" class="dropdown-content">
-      <li><a href="#!">Settings</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">Log out</a></li>
-    </ul>
     <nav>
       <div id="roboto-nav" class="nav-wrapper">
+        <ul id="account-dropdown" class="dropdown-content">
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#settings">Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#logout">Log out</a></li>
+        </ul>
         <a href="/" class="brand-logo center">Sweepstake Ninja</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/about.html">About</a></li>
@@ -45,6 +46,100 @@
         </div>
       </div>
       <div id="roboto-dashboard" style="display: none;" class="container roboto-hidden">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <div class="card">
+              <div class="card-image">
+                <img class="profile-image" />
+                <span class="card-title"></span>
+              </div>
+              <div class="card-action">
+                <a href="#settings">Edit Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="roboto-settings" style="display: none;" class="container roboto-hidden">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s4"><a class="active" href="#profile">Profile</a></li>
+              <li class="tab col s4"><a href="#sweepstakes">Sweepstakes</a></li>
+              <li class="tab col s4"><a href="#registrations">Registrations</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="profile" class="col s12 active">
+          <div class="row">
+            <form id="form-profile" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="firstname" name="firstname" type="text" class="validate">
+                  <label for="firstname">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="lastname" name="lastname" type="text" class="validate">
+                  <label for="lastname">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="address1" name="address1" type="text" class="validate">
+                  <label for="address1">Address 1</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s4">
+                  <input id="city" name="city" type="text" class="validate">
+                  <label for="city">City</label>
+                </div>
+                <div class="input-field col s4">
+                  <select id="state" name="state" class="roboto-state">
+                    <option value="" disabled>State</option>
+                  </select>
+                  <label for="state">State</label>
+                </div>
+                <div class="input-field col s4">
+                  <input id="zipcode" name="zipcode" type="text" class="validate">
+                  <label for="zipcode">ZIP Code</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="birthdate" name="birthdate" type="date" class="datepicker">
+                  <label for="birthdate">Birthdate</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="phone" name="phone" type="tel" class="validate">
+                  <label for="phone">Telephone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <p>
+                    <input id="gender_female" name="gender" value="female" type="radio">
+                    <label for="gender_female">Female</label>
+                  </p>
+                  <p>
+                    <input id="gender_male" name="gender" value="male" type="radio">
+                    <label for="gender_male">Male</label>
+                  </p>
+                  <label class="radio-label">Gender</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s3 offset-s9">
+                  <button class="btn waves-effect waves-light right-align" type="submit" name="update_profile">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="sweepstakes" class="col s12">Sweepstakes</div>
+        <div id="registrations" class="col s12">Registrations</div>
       </div>
       <div id="roboto-login" style="display: none;" class="container roboto-hidden">
         <div class="row">
