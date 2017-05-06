@@ -228,11 +228,42 @@
           <form class="col s12">
             <input type="hidden" name="clientId">
             <input type="hidden" name="registrationId">
+            <input type="hidden" name="scheduleId">
             <div class="row">
               <div class="input-field col s6">
                 <select name="sweepstake" class="sweepstake-select">
                 </select>
                 <label>Sweepstake</label>
+              </div>
+              <div class="input-field col s6">
+                <select name="interval">
+                  <option value="DAILY" selected>Daily</option>
+                  <option value="HOURLY">Hourly</option>
+                </select>
+                <label>Interval</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="cancel modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+        <button type="submit" class="modal-action modal-close waves-effect waves-red btn">Submit</button>
+      </div>
+    </div>
+    <!-- Sweepstake Modal -->
+    <div class="modal" id="sweepstake-modal">
+      <div class="modal-content">
+        <h5>Schedule Sweepstake</h5>
+        <div class="row">
+          <form class="col s12">
+            <input type="hidden" name="scheduleId">
+            <input type="hidden" name="sweeperId">
+            <div class="row">
+              <div class="input-field col s6">
+                <select name="registration" class="sweepstake-select">
+                </select>
+                <label>Registration</label>
               </div>
               <div class="input-field col s6">
                 <select name="interval">
@@ -265,6 +296,16 @@
       </div>
     </div>
     <div id="registration-tab" class="col s12 template">
+      <div class="row registration-contents">
+        <div class="col s2 center">
+          <a href="#!" class="add-schedule waves-effect waves-circle btn-floating red">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+        <div class="col s10">
+          <div class="chips"></div>
+        </div>
+      </div>
       <div class="row sweeper-loader">
         <div class="col s12 center">
           <div class="preloader-wrapper small active">
@@ -278,16 +319,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row registration-contents">
-        <div class="col s2 center">
-          <a href="#!" class="add-schedule waves-effect waves-circle btn-floating red">
-            <i class="material-icons">add</i>
-          </a>
-        </div>
-        <div class="col s10">
-          <div class="chips"></div>
         </div>
       </div>
     </div>
