@@ -169,7 +169,6 @@
                 <div class="input-field col s6">
                   <select name="type">
                     <option value="" disabled selected>Choose Type</option>
-                    <option value="DEFAULT">Managed</option>
                     <option value="API">Developer</option>
                   </select>
                   <label>Type</label>
@@ -226,57 +225,26 @@
         </div>
       </div>
     </footer>
-    <!-- Scheduling modal -->
-    <div class="modal" id="schedule-modal">
-      <div class="modal-content">
-        <h5>Registration Schedules</h5>
-        <div class="row">
-          <form class="col s12">
-            <input type="hidden" name="clientId">
-            <input type="hidden" name="registrationId">
-            <input type="hidden" name="scheduleId">
-            <div class="row">
-              <div class="input-field col s6">
-                <select name="sweepstake" class="sweepstake-select">
-                </select>
-                <label>Sweepstake</label>
-              </div>
-              <div class="input-field col s6">
-                <select name="interval">
-                  <option value="DAILY" selected>Daily</option>
-                  <option value="HOURLY">Hourly</option>
-                </select>
-                <label>Interval</label>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="cancel modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
-        <button type="submit" class="modal-action modal-close waves-effect waves-red btn">Submit</button>
-      </div>
-    </div>
     <!-- Sweepstake Modal -->
     <div class="modal" id="sweepstake-modal">
       <div class="modal-content">
-        <h5>Schedule Sweepstake</h5>
+        <h5>Schedule <span></span></h5>
         <div class="row">
           <form class="col s12">
             <input type="hidden" name="scheduleId">
             <input type="hidden" name="sweeperId">
             <div class="row">
               <div class="input-field col s6">
-                <select name="registration" class="sweepstake-select">
-                </select>
-                <label>Registration</label>
-              </div>
-              <div class="input-field col s6">
                 <select name="interval">
                   <option value="DAILY" selected>Daily</option>
                   <option value="HOURLY">Hourly</option>
                 </select>
                 <label>Interval</label>
+              </div>
+              <div class="input-field col s6">
+                <select name="amount" class="roboto-hours">
+                </select>
+                <label>Time</label>
               </div>
             </div>
           </form>
@@ -301,36 +269,6 @@
         </div>
       </div>
     </div>
-    <div id="registration-tab" class="col s12 template">
-      <div class="row registration-contents">
-        <div class="col s2 center">
-          <a href="#!" class="add-schedule waves-effect waves-circle btn-floating red">
-            <i class="material-icons">add</i>
-          </a>
-        </div>
-        <div class="col s10">
-          <div class="chips"></div>
-        </div>
-      </div>
-      <div class="row sweeper-loader">
-        <div class="col s12 center">
-          <div class="preloader-wrapper small active">
-            <div class="spinner-layer spinner-{color}-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
-              </div><div class="gap-patch">
-                <div class="circle"></div>
-              </div><div class="circle-clipper right">
-                <div class="circle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <li id="tab-header" class="tab template">
-      <a href="#{id}">{name}</a>
-    </li>
     <li id="credentials-item" class="template">
       <div class="collapsible-header">{name}
         <a href="#!" class="secondary-content delete"><i class="red-text material-icons">delete</i></a>
@@ -348,29 +286,6 @@
         <div class="row">
           <div class="col s2">Type</div>
           <div class="col s10">{label}</div>
-        </div>
-        <div class="row tab-container">
-          <div class="col s12">
-            <ul class="tabs">
-            </ul>
-          </div>
-        </div>
-        <div class="row tab-contents">
-        </div>
-        <div class="row registration-loader">
-          <div class="col s12 center">
-            <div class="preloader-wrapper small active">
-              <div class="spinner-layer spinner-{color}-only">
-                <div class="circle-clipper left">
-                  <div class="circle"></div>
-                </div><div class="gap-patch">
-                  <div class="circle"></div>
-                </div><div class="circle-clipper right">
-                  <div class="circle"></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </li>
