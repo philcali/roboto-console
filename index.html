@@ -47,7 +47,7 @@
       </div>
       <div id="roboto-dashboard" style="display: none;" class="container roboto-hidden">
         <div class="row">
-          <div class="col s6 offset-s3">
+          <div class="col s6">
             <div class="card">
               <div class="card-image">
                 <img class="profile-image" />
@@ -55,6 +55,17 @@
               </div>
               <div class="card-action">
                 <a href="#settings">Edit Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s6">
+            <ul id="roboto-events-container" class="collection">
+            </ul>
+            <div id="events-loading-bar" class="row">
+              <div class="col s12">
+                <div class="progress">
+                  <div class="indeterminate"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -269,6 +280,13 @@
         </div>
       </div>
     </div>
+    <li id="event-item" class="template collection-item avatar">
+    <i class="material-icons circle {color}">{icon}</i>
+      <span class="title">{title}</span>
+      <p>{shortMessage}<br>
+        {time}</p>
+        <i class="secondary-content material-icons">play</i>
+    </li>
     <li id="credentials-item" class="template">
       <div class="collapsible-header">{name}
         <a href="#!" class="secondary-content delete"><i class="red-text material-icons">delete</i></a>
